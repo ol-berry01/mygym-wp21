@@ -3,7 +3,9 @@
  * Footer file for the wp-boilerplate.
  */
 ?>
-    
+
+<!-- End: #main -->
+</div>
 <footer class="page-footer font-small mdb-color pt-4">
 <div class="container text-center text-md-left">
   <div class="row text-center text-md-left mt-3 pb-3">
