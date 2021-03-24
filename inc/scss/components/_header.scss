@@ -1,0 +1,91 @@
+// Header Styles
+
+.navbar {
+  padding-top: 20px;
+  width: 100%;
+  z-index: 99;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  -webkit-transition: background 700ms linear;
+  -moz-transition: background 700ms linear;
+  -o-transition: background 700ms linear;
+  -ms-transition: background 700ms linear;
+  transition: background 700ms linear;
+
+  @media (max-width: 991px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    background: $black;
+  }
+
+  @media (max-width: 540px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: $black;
+  }
+
+  .menu-main-nav-container {
+    width: 100%;
+    display: flex;
+
+    @media (max-width: 1080px) {
+      display: inherit;
+    }
+  }
+
+  .navbar-brand {
+    color: #fff;
+    transition: all 300ms ease-in 500ms;
+
+    &:hover {
+      color: $primary-colour;
+    }
+  }
+
+  & ul li {
+    margin-right: 25px;
+    list-style: none;
+
+    & .nav-link {
+      color: #fff;
+      font-family: $header-font;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 28px;
+      display: block;
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        color: $primary-colour;
+      }
+    }
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  .top-social {
+    i {
+      display: inline-block;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      margin-left: 20px;
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        color: $primary-colour;
+      }
+
+      @media (max-width: 1080px) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.scrolled {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 1) 0%, rgba(31, 31, 31, 1) 100%);
+}
