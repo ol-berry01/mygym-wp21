@@ -1,6 +1,10 @@
 @import "./variables/variables";
 
 @import "./resets/resets";
+@import "./components/buttons";
 
 @import "./components/header";
 @import "./components/footer";
+
+// Layout
+@import "./layout/cta";
