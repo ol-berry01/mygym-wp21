@@ -1,0 +1,84 @@
+.hero-section {
+  .carousel {
+    .carousel-inner {
+      img {
+        height: 87vh;
+        object-fit: cover;
+
+        @media (max-width: 1024px) {
+          height: 82vh;
+        }
+
+        @media (max-width: 768px) {
+          height: 75vh;
+        }
+      }
+
+      .carousel-caption {
+        top: 72px;
+        height: calc(100% - 130px);
+        padding: 0;
+        text-align: left;
+        text-transform: uppercase;
+
+        .container,
+        .row {
+          height: 100%;
+        }
+
+        h1 {
+          color: transparent;
+          letter-spacing: 2.5px;
+          -webkit-text-stroke: 3px white;
+          font-weight: 700;
+        }
+
+        #carousel-countdown {
+          .metric {
+            margin: 0 1.4rem;
+            display: inline-block;
+
+            @media (max-width: 720px) {
+              margin: 0 0.5rem;
+            }
+
+            h3 {
+              text-align: center;
+              display: inline-block;
+            }
+          }
+        }
+
+        .btn.btn-mygym {
+          color: #fff;
+        }
+
+        @media (max-width: 1024px) {
+          text-align: center;
+        }
+
+        @media (max-width: 720px) {
+          text-align: center;
+
+          .container,
+          .row {
+            padding: 0;
+          }
+
+          h1 {
+            font-size: 2.2rem;
+          }
+          h3 {
+            font-size: 1.8rem;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
+
+        @media (max-width: 540px) {
+        }
+      }
+    }
+  }
+}

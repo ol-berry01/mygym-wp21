@@ -41,6 +41,24 @@
     function register_acf_block_types() {
 
         /**
+         * Carousel Block
+         */
+        acf_register_block_type(
+            array(
+                'name'              => 'carousel',
+                'title'             => __( 'Carousel' ),
+                'description'       => __( 'Gym Carousel block' ),
+                'render_template'   => 'template-parts/blocks/carousel.php',
+                'enqueue_script'    => get_template_directory_uri() . '/inc/js/countdown.js',
+                'icon'              => 'format-gallery',
+                'keywords'          => array(
+                                        'carousel',
+                                        'banner'
+                                    )
+                )
+        ); 
+
+        /**
          * CTA Block
          */
         acf_register_block_type(
