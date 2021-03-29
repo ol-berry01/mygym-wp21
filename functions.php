@@ -95,6 +95,22 @@
                                         'call to action'
                                     )
                 )
-        ); 
+        );
 
+        /**
+         * Features Block
+         */
+        acf_register_block_type(
+            array(
+                'name'              => 'features',
+                'title'             => __( 'Features' ),
+                'description'       => __( 'Gym Features block' ),
+                'render_template'   => 'template-parts/blocks/features.php',
+                'icon'              => 'pressthis',
+                'keywords'          => array(
+                                        'features',
+                                        'product'
+                                    )
+                )
+        );
     };
