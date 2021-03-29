@@ -2,6 +2,7 @@
 
     function mygym_resources() {
         // Scripts
+        wp_enqueue_script( 'jquery' );
         wp_enqueue_script( 'mygym_dist_vendors', get_template_directory_uri() . '/dist/js/vendors.bundle.js', array(), false, true  );
         wp_enqueue_script( 'mygym_dist_scripts', get_template_directory_uri() . '/dist/js/scripts.bundle.js', array(), false, true  );
         wp_enqueue_script( 'mygym_dist_main', get_template_directory_uri() . '/dist/js/main.bundle.js', array(), false, true  );
@@ -39,6 +40,27 @@
     }
 
     function register_acf_block_types() {
+
+        /**
+         * Blog Block
+         */
+        acf_register_block_type(
+            array(
+                'name'              => 'blog',
+                'title'             => __( 'Blog' ),
+                'description'       => __( 'Blog block' ),
+                'render_template'   => 'template-parts/blocks/blog.php',
+                'enqueue_script'    => get_template_directory_uri() . '/inc/js/masonry.js',
+                'icon'              => 'book-alt',
+                'keywords'          => array(
+                                        'Blog',
+                                        'club information'
+                ),
+                'supports'          => array(
+                    'align' => false,
+                )
+            )
+        ); 
 
         /**
          * Carousel Block

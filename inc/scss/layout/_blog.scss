@@ -1,0 +1,113 @@
+.blog-section {
+  background: $primary-colour;
+  padding: 5rem 0;
+
+  @media (min-width: 768px) {
+  }
+
+  h2 {
+    color: $white;
+    text-transform: uppercase;
+    font-family: $electrical-font;
+    letter-spacing: 3px;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .btn {
+    font-family: $header-font;
+  }
+
+  .grid {
+    width: 100%;
+
+    /* clear fix */
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    &-item {
+      background: $white;
+      width: 100%;
+      min-height: 160px;
+      margin: 0 0 30px;
+      border-radius: 3px;
+      float: left;
+      transition: 600ms ease;
+
+      @media (min-width: 768px) {
+        width: calc(50% - 30px);
+        margin: 15px;
+      }
+
+      @media (min-width: 1024px) {
+        width: calc(33.3333% - 30px);
+        min-height: 160px;
+        margin: 15px;
+      }
+
+      &:hover {
+        background: $black;
+
+        h4 {
+          color: $white;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 600px;
+        height: auto;
+        object-fit: cover;
+      }
+
+      &-container {
+        margin: 0.75rem;
+
+        h4 {
+          margin-bottom: 2px;
+          font-size: 1rem;
+          letter-spacing: 3px;
+          font-family: $electrical-font;
+          font-weight: 700;
+        }
+
+        a {
+          color: $primary-colour;
+
+          &:hover {
+            color: $black;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .btn-mygym-alt {
+        background: $black;
+        color: $white;
+        width: 100%;
+        padding: 0.25rem 3rem;
+        border: none;
+        border-radius: 0 0 3px 3px;
+        line-height: 45px;
+        transition: background-color 700ms;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: $white;
+          color: $primary-colour;
+          border-radius: 0 0 3px 3px;
+        }
+      }
+    }
+  }
+}
+
+/* ---- .grid-item ---- */
