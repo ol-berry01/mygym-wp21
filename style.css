@@ -4,3 +4,11 @@
  Author:       Oliver Berry
  Version:      1.0.0
 */
+
+@font-face {
+  font-family: "electrical";
+  src: url("./inc/fonts/electrical.woff2") format("woff2"), url("./inc/fonts/electrical.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
