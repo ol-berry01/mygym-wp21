@@ -113,4 +113,22 @@
                                     )
                 )
         );
+
+        /**
+         * Map Block
+         */
+        acf_register_block_type(
+            array(
+                'name'              => 'map',
+                'title'             => __( 'Map' ),
+                'description'       => __( 'Gym Map block' ),
+                'render_template'   => 'template-parts/blocks/map.php',
+                'icon'              => 'location-alt',
+                'keywords'          => array(
+                                        'map',
+                                        'hours',
+                                        'contact'
+                                    )
+                )
+        );
     };
