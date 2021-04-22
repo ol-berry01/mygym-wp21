@@ -29,8 +29,7 @@
         h1 {
           color: $white;
           letter-spacing: 2.5px;
-          // -webkit-text-stroke: 3px white;
-          font-family: $electrical-font;
+          font-family: $electrical-font, $header-font;
           font-weight: 700;
           opacity: 0.95;
         }
