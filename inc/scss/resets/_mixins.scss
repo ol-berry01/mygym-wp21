@@ -1,0 +1,11 @@
+@mixin font($font-family, $font-file-woff, $font-file-woff2) {
+  @font-face {
+    font-family: $font-family;
+    src: local($font-file-woff2) format("woff2"), local($font-file-woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@include font("electrical", "../../fonts/electrical.woff2", "../../fonts/electrical.woff");
